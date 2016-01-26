@@ -1,0 +1,454 @@
+body{
+	background: url(../images/background.png); 
+	font: 12px/24px Arial, Tahoma, sans-serif; 
+	color: #272727; 
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+@font-face{
+    font-family: 'fira_sansbook';
+	src: url('../fira/firasans-book.eot');
+	src: url('../fira/firasans-book.eot?#iefix') format('embedded-opentype'),
+	url('../fira/firasans-book.woff') format('woff'),
+	url('../fira/firasans-book.ttf') format('truetype');
+	font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'fira_sanslight';
+	src: url('../fira/firasans-light.eot');
+	src: url('../fira/firasans-light.eot?#iefix') format('embedded-opentype'),
+	url('../fira/firasans-light.woff') format('woff'),
+	url('../fira/firasans-light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'fira_sansmedium';
+	src: url('../fira/firasans-medium.eot');
+	src: url('../fira/firasans-medium.eot?#iefix') format('embedded-opentype'),
+	url('../fira/firasans-medium.woff') format('woff'),
+	url('../fira/firasans-medium.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'proxima_nova_condensedSBd';
+	src: url('../Proxima-Nova/proximanovacond-semibold-webfont.eot');
+	src: url('../Proxima-Nova/proximanovacond-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../Proxima-Nova/proximanovacond-semibold-webfont.woff2') format('woff2'),
+	url('../Proxima-Nova/proximanovacond-semibold-webfont.woff') format('woff'),
+	url('../Proxima-Nova/proximanovacond-semibold-webfont.ttf') format('truetype'),
+	url('../Proxima-Nova/proximanovacond-semibold-webfont.svg#proxima_nova_condensedSBd') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*Структура сайта*/
+html,
+body,{
+	height: 100%;
+}
+/*Футер прибит*/
+/* .container{
+	position: relative;
+	min-height: 100%;
+	min-width: 970px;
+	height: auto!important;
+	overflow: hidden;
+}
+.container:after{
+	content:"";
+	height: 80px;
+	display: block;
+}
+.footer{
+	height: 80px;
+	margin-top: -80px;
+} */
+
+.wrapper {
+  position: relative;
+  min-height: 100%;
+}
+.page {
+  padding-bottom: 100px;
+}
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+}
+
+/*Конец Структуры сайта*/
+
+/*Шапка сайта*/
+.header{
+	position: relative; 
+	height: 117px; 
+	background-color: #eff3f7;
+}
+/*.container-big{
+	min-width: 1200px;
+	min-width: 960px;
+	height: 100%;
+	margin: 0 auto;
+}*/
+.header:after{
+	content: '';
+	position: absolute;
+	top:117px;
+	height: 2px;
+	width: 1400px;
+	color: #3C21C2;
+	background: linear-gradient(90deg, #fff 50px, #1c667a 700px, #fff 1350px, #fff 400px ) left top repeat-x;; 
+}
+.logo{
+	position: absolute;
+	left: 100px; top:10px;
+}
+.logo-in-header{
+	width: 200px
+}
+.logo-in-header:hover{
+	opacity: 0.8
+}
+.sicon{
+	position: absolute;
+	right: 100px;
+	top: 25px;
+	margin: 0px;
+}
+
+/*Спрайт*/
+.sprite {
+    background-image: url(../images/spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.sprite-facebook {
+    width: 47px;
+    height: 47px;
+    margin: 12px;
+    background-position: -5px -5px;
+}
+
+.sprite-facebook:hover {
+    background-position: -62px -5px;
+}
+
+.sprite-gihtub {
+    width: 47px;
+    height: 47px;
+    margin: 12px;
+    background-position: -119px -5px;
+}
+
+.sprite-gihtub:hover {
+    background-position: -176px -5px;
+}
+
+.sprite-tw {
+    width: 47px;
+    height: 47px;
+    margin: 12px;
+    background-position: -233px -5px;
+}
+
+.sprite-tw:hover {
+    background-position: -290px -5px;
+}
+
+.sprite-vk {
+    width: 47px;
+    height: 47px;
+    margin: 12px;
+    background-position: -347px -5px;
+}
+
+.sprite-vk:hover {
+    background-position: -404px -5px;
+}
+/*Конец Спрайта*/
+/*Конец Шапки сайта*/
+
+/*Главное меню*/
+.static_info{
+	float: left;
+}
+.main_navigation{
+	overflow: hidden;
+	background-color: #eff3f7;
+	width: 250px;
+	margin-left: 220px;
+	margin-top: 40px;
+	border-radius: 4px;
+}
+.list_of_main_navigation{
+	height: 75px;
+}
+.list_of_main_navigation .fira_sansbook{
+	font-family: 'fira_sansbook';
+	font-size: 21px;
+	font-weight: normal;
+    font-style: normal;
+}
+.ul_of_main_navigation{
+	margin: 0;padding: 0;
+}
+.list_of_main_navigation a{
+	display: block;
+	padding: 28px;
+	color: #959aa8;
+	font-size: 21px;
+}
+.portfolio a{
+	margin: 0 10px;
+	padding: 28px 28px 28px 19px;
+	border-bottom: 2px solid #3ba8c0;
+}
+.list_of_main_navigation a:hover{
+	color: #3ba8c0;
+}
+.common a{
+	color: #fff;
+	background-color: #3ba8c0; 
+}
+.common a:hover{
+	color: #fff;
+}
+/*Конец Главного меню*/
+
+/*Контакты*/
+.address{
+	width: 250px; background-color: #3ba8c0;
+	margin-left: 220px;
+	margin-top: 25px;
+	border-radius: 3px;
+}
+.header_of_address{
+	background-color: #3BA8C0;
+	border-radius: 3px 3px 0 0;
+	color: #fff;
+	padding: 10px 15px 10px 20px;
+	margin: 0;
+	font-family: 'fira_sansbook';
+	font-size: 21px;
+	font-weight: normal;
+    font-style: normal;
+}
+.list_of_address .item_of_address{
+	height: 25px;
+	padding: 8px 0px 8px 40px;
+}
+.list_of_address .item_of_address .href{
+	color: #fff; display: block;
+	font-family: 'fira_sansbook';
+	font-size: 17px;
+	font-weight: normal;
+    font-style: normal;
+}
+.list_of_address .href:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
+.list_of_address img{
+	padding: 3px 15px 0 0; display: block; float: left
+}
+.list_of_address{
+	margin: 0; padding: 0;
+}
+.mail{
+	background-color: #41b9d4; 
+}
+.tel{
+	background-color: #48cbe8;
+}
+.skype{
+	background-color: #51daf8;
+	border-radius:  0 0 3px 3px;
+}
+/*Конец контакотов*/
+
+
+/*Контент сайта*/
+.dynamic_info{
+	float: left;
+}
+.content_header{
+	color: #3ba8c0;
+	margin: 0;
+	padding: 25px;
+	border-bottom: 2px solid #3ba8c0;
+}
+.content_header.fira_sansbook{
+	font-family: 'fira_sansbook';
+	font-size: 27px;
+	font-weight: normal;
+    font-style: normal;
+
+}
+.aboutbox-item .fira_sansbook{
+	font-family: 'fira_sansbook';
+	font-weight: normal;
+    font-style: normal;
+    color: #4a545d;
+}
+.aboutbox-item .where.fira_sansbook{
+	font-size: 21px;
+}
+.aboutbox-item .period.fira_sansbook{
+	font-size: 17px;
+}
+.aboutbox{
+	width: 650px;
+	margin: 20px 0 0 60px;
+	background-color: #eff3f7;
+	border-radius: 4px;
+}
+.aboutbox:first-child{
+	margin: 40px 0 0 60px;
+}
+.aboutbox:last-child{
+	margin: 20px 0 40px 60px;
+}
+.aboutbox .aboutbox-list{
+	margin: 0;
+	padding: 25px 0 45px 50px;
+}
+.aboutbox .aboutbox-item.icon-experience .where{
+	padding: 10px;
+}
+.aboutbox .aboutbox-item{
+	margin-bottom: 20px;	
+}
+.aboutbox .aboutbox-item{
+	margin-bottom: 20px;	
+}
+.aboutbox .aboutbox-item {
+	padding: 0 0 0 76px;
+}
+.aboutbox-list.education .aboutbox-item {
+	padding: 0 0 0 84px;
+}
+.aboutbox .aboutbox-item:last-child{
+	margin-bottom: 0;
+}
+.aboutbox-item .where{
+	display: block;
+	/*font-family: 'helveticaneuecyrbold';*/
+	/*font-size: 16px;*/
+}
+.aboutbox-item .period{
+	/*font-family: 'helveticaneuecyrthin';*/
+	/*font-size: 15px;*/
+	/*line-height: 1;*/
+}
+
+/*Первый блок*/
+.content_header.common{
+	width: 300px;
+}
+.my_photo{
+	float: left;
+	margin: 35px 10px 0 55px;
+	width: 150px;
+	border-radius: 100px; /* Радиус скругления */
+    border: 3px solid #35a8bf; /* Параметры рамки */
+    box-shadow: 0 0 7px #3C8C9C; /* Параметры тени */
+}
+.fira_sansmedium{
+	font-family: 'fira_sansmedium';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 17px;
+	margin: 15px;
+}
+.fira_sansbook{
+	font-size: 15px;
+	margin: 0;
+}
+.aboutbox-list.common .aboutbox-item{
+	margin: 0 0 15px 0;
+}
+.skills{
+	background: linear-gradient(#3ba8c0 11px, #2e8ca2 13px);
+	border-radius: 4px;
+	padding: 3px 15px;
+	margin: 5px;
+	color: #fff;
+	font-family: 'proxima_nova_condensedSBd';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 14px;
+}
+.proxima_nova{
+	margin: 9px 5px 5px 282px;
+}
+/*Второй блок*/
+.content_header.experience{
+	width: 168px;
+}
+.aboutbox-list .icon-experience{
+	background: url(../images/bag.png) 18px center no-repeat;
+}
+
+/*Третий блок*/
+.content_header.education{
+	width: 168px;
+}
+.aboutbox-list .icon-college{
+	background: url(../images/hat.png) 18px center no-repeat;
+}
+.aboutbox-list .icon-course{
+	background: url(../images/list.png) 28px center no-repeat;
+}
+
+/*Конец Контента сайта*/
+
+
+/*Подвал*/
+/* .footer{
+	clear: both;
+	position: relative;
+	min-width: 960px;
+	margin: 0; padding: 0; 
+	height: 85px;
+	background-color: #eff3f7;
+}*/
+.footer:before{
+	content: '';
+	position: absolute;
+	bottom:82px;
+	height: 2px;
+	width: 1400px;
+	color: #3C21C2;
+	background: linear-gradient(90deg, #fff 50px, #1c667a 700px, #fff 1350px, #fff 400px ) left top repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cccccc', endColorstr='#000000');
+}
+.footer .copyright{
+	float: left;
+	display: block;
+	text-align: center;
+	margin: 0; 
+	padding: 30px 30px 30px 504px;
+	font-family: 'fira_sanslight';
+	font-weight: normal;
+	font-style: normal;
+	color: #4a545d;
+}
+ .login{
+ 	float: left;
+	margin: 25px 25px 25px 253px;
+	background: url(../images/login.png) no-repeat; width: 20px; height: 33px
+}
+.login:hover {
+	background: url(../images/login-hover.png) no-repeat;width: 20px; height: 33px
+} 
+/*Конец Подвала*/
