@@ -80,7 +80,7 @@ body {
 }
 .sicon{
 	float: left;
-	margin-left: 700px;
+	margin-left: 670px;
 	margin-top: 20px;
 	/* 	position: absolute;
 	right: 100px;
@@ -156,12 +156,16 @@ body {
 	overflow: hidden;
 	background-color: #eff3f7;
 	width: 250px;
-	/*margin-left: 220px;*/
 	margin-top: 40px;
 	border-radius: 4px;
 }
 .list_of_main_navigation{
 	height: 75px;
+	margin: 0 11px;
+	border-bottom: 2px solid #3ba8c0;
+}
+.list_of_main_navigation:last-child{
+	border-bottom: none;
 }
 .list_of_main_navigation .fira_sansbook{
 	font-family: 'fira_sansbook';
@@ -172,26 +176,30 @@ body {
 .ul_of_main_navigation{
 	margin: 0;padding: 0;
 }
-.list_of_main_navigation a{
-	display: block;
-	padding: 28px;
-	color: #959aa8;
+.list_of_main_navigation.common {
+	background-color: #3ba8c0; 
+	border-bottom: none;
+	margin: 0;
+	padding-left: 11px;
+	margin-top: -2px;
+}
+.list_of_main_navigation.common .fira_sansbook{
+	color: #fff;
 	font-size: 21px;
 }
-.portfolio a{
-	margin: 0 10px;
-	padding: 28px 28px 28px 19px;
-	border-bottom: 2px solid #3ba8c0;
+.list_of_main_navigation.common .fira_sansbook:hover{
+	color: #fff;
 }
-.list_of_main_navigation a:hover{
+.list_of_main_navigation .fira_sansbook{
+	font-family: 'fira_sansbook';
+	display: block;
+	color: #959aa8;
+	font-size: 21px;
+	margin-left: 16px;
+	padding: 20px 0;
+}
+.list_of_main_navigation .fira_sansbook:hover{
 	color: #3ba8c0;
-}
-.common a{
-	color: #fff;
-	background-color: #3ba8c0; 
-}
-.common a:hover{
-	color: #fff;
 }
 /*Конец Главного меню*/
 
@@ -206,7 +214,7 @@ body {
 	background-color: #3BA8C0;
 	border-radius: 3px 3px 0 0;
 	color: #fff;
-	padding: 10px 15px 10px 20px;
+	padding: 5px 15px 5px 20px;
 	margin: 0;
 	font-family: 'fira_sansbook';
 	font-size: 21px;
@@ -280,7 +288,8 @@ body {
 }
 .login{
 	float: left;
-	margin: 25px 25px 25px 210px;
+	margin: 25px 25px 25px 175px;
+	text-indent: -9999px;
 	background: url(../images/login.png) no-repeat; width: 20px; height: 33px
 }
 .login:hover {

@@ -6,7 +6,7 @@
 .content_header{
 	color: #3ba8c0;
 	margin: 0;
-	padding: 25px;
+	padding: 12px 12px 12px 25px;
 	border-bottom: 2px solid #3ba8c0;
 }
 .content_header.fira_sansbook{
@@ -23,10 +23,10 @@
     color: #4a545d;
 }
 .aboutbox-item .where.fira_sansbook{
-	font-size: 21px;
+	font-size: 17px;
 }
 .aboutbox-item .period.fira_sansbook{
-	font-size: 17px;
+	font-size: 15px;
 }
 .aboutbox{
 	width: 650px;
@@ -42,7 +42,7 @@
 }
 .aboutbox .aboutbox-list{
 	margin: 0;
-	padding: 25px 0 45px 50px;
+	padding: 20px 0 45px 50px;
 }
 .aboutbox .aboutbox-item.icon-experience .where{
 	padding: 10px;
@@ -54,7 +54,7 @@
 	margin-bottom: 20px;	
 }
 .aboutbox .aboutbox-item {
-	padding: 0 0 0 76px;
+	padding: 0 0 0 65px;
 }
 .aboutbox-list.education .aboutbox-item {
 	padding: 0 0 0 84px;
@@ -79,11 +79,17 @@
 }
 .my_photo{
 	float: left;
-	margin: 35px 10px 0 55px;
+	margin: 35px 10px 80px 55px;
 	width: 150px;
 	border-radius: 100px; /* Радиус скругления */
     border: 3px solid #35a8bf; /* Параметры рамки */
     box-shadow: 0 0 7px #3C8C9C; /* Параметры тени */
+}
+.aboutbox .aboutbox-list.common{
+	/*position: relative;*/
+}
+.aboutbox .aboutbox-list.common .aboutbox-item:last-child{
+	position: relative;
 }
 .fira_sansmedium{
 	font-family: 'fira_sansmedium';
@@ -97,7 +103,7 @@
 	margin: 0;
 }
 .aboutbox-list.common .aboutbox-item{
-	margin: 0 0 15px 0;
+	margin: 0 0 8px 0;
 }
 .skills{
 	background: linear-gradient(#3ba8c0 11px, #2e8ca2 13px);
@@ -111,14 +117,17 @@
 	font-size: 14px;
 }
 .proxima_nova{
-	margin: 9px 5px 5px 282px;
+	position: absolute;
+	left: 360px;
+	top:20px;
+	/*margin: 9px 5px 5px 282px;*/
 }
 /*Второй блок*/
 .content_header.experience{
 	width: 168px;
 }
 .aboutbox-list .icon-experience{
-	background: url(../images/bag.png) 18px center no-repeat;
+	background: url(../images/bag.png) 1px center no-repeat;
 }
 
 /*Третий блок*/
@@ -126,10 +135,10 @@
 	width: 168px;
 }
 .aboutbox-list .icon-college{
-	background: url(../images/hat.png) 18px center no-repeat;
+	background: url(../images/hat.png) 1px center no-repeat;
 }
 .aboutbox-list .icon-course{
-	background: url(../images/list.png) 28px center no-repeat;
+	background: url(../images/list.png) 11px center no-repeat;
 }
 
 /*Конец Контента сайта*/
