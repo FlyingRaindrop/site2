@@ -1,0 +1,121 @@
+.dynamic_info{
+	float: left;
+	margin: 40px 0 40px 60px;
+}
+.my_projects{
+	width: 665px;
+	background-color: #eff3f7;
+	border-radius: 4px;
+}
+.item{
+	display: inline-block;
+	margin: 0 10px;
+	width: 183px;
+	vertical-align: top;
+	text-align: center;
+	margin-bottom: 38px;
+}
+.item .add_project{
+	position: relative;
+	display: block;
+	width: 182;
+	height: 128px;
+	border-radius: 5px;
+	border:1px dashed #35a8bf;
+	background-color: #edf8fc;
+}
+.add_project-img{
+	position: absolute;
+	top: 35px;
+	left: 75px;
+}
+.add_project_text{
+	position: absolute;
+	top: 75px;
+	left: 43px;
+	font-family: 'fira_sanslight';
+	font-weight: normal;
+	font-style: normal;
+	color: #35a8bf;
+	font-size: 13px;
+}
+.project-info{
+	font-size: 15px;
+	line-height: 1.2;
+	margin: 5px 0;
+	font-family: 'fira_sanslight';
+	font-weight: normal;
+	font-style: normal;
+	color: #606972;
+}
+.header_of_projects{
+	width: 170px;
+	color: #3ba8c0;
+	margin: 0;
+	padding: 12px 12px 12px 25px;
+	border-bottom: 2px solid #3ba8c0;
+}
+.header_of_projects{
+	font-family: 'fira_sansbook';
+	font-size: 27px;
+	font-weight: normal;
+    font-style: normal;
+}
+.link_of_project{
+	font-family: 'fira_sanslight_italic';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 13px;
+	color:#3ba8c0;
+}
+.list_of_projects{
+	margin: 27px 20px 0 20px;
+	padding: 0;
+}
+.projects-img{
+	overflow: hidden;
+	border-radius: 5px;
+	border: 2px solid #35a8bf;
+}
+
+/*Hover*/
+.item { 
+    position: relative;
+}
+.projects-img {
+    box-sizing: border-box;
+}
+.hover-img{
+	border-radius: 5px;
+}
+.project-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 55px;
+    text-align: center;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+.item:hover .project-wrapper {	
+	transform: scale(1);
+	-webkit-transform: scale(1);
+}
+.item .zoom-link {
+    font-size: 12px;
+    border: 1px solid #eff3f7;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 0 4px;
+}
+.item:hover .projects-img{
+	-moz-opacity: 0.20;
+	opacity:.20;
+	filter: alpha(opacity=20);
+}
+.item:hover .hover-img{
+	background-color: #3d8eb9;
+} 
+
