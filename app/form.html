@@ -9,7 +9,7 @@
 	<meta name="author" content="">
 	<title>Мой прекрасный сайт!</title>
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/my-projects.css">
+	<link rel="stylesheet" href="css/form.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css"></head>
 <body>
@@ -36,11 +36,11 @@
 							<li class="list_of_main_navigation ">
 								<a href="index.html" class="fira_sansbook">Обо мне</a>
 							</li>
-							<li class="list_of_main_navigation common">
-								<a href="#" class="fira_sansbook">Мои работы</a>
-							</li>
 							<li class="list_of_main_navigation ">
-								<a href="form.html" class="fira_sansbook">Связаться со мной</a>
+								<a href="my_projects.html" class="fira_sansbook">Мои работы</a>
+							</li>
+							<li class="list_of_main_navigation common">
+								<a href="#" class="fira_sansbook">Связаться со мной</a>
 							</li>
 						</ul>
 					</nav>
@@ -63,56 +63,29 @@
 					</address>
 				</div>
 				<div class="dynamic_info">
-					<section class="my_projects">
-						<h2 class="header_of_projects">Мои работы</h2>
-						<ul class="list_of_projects">
-							<li class="item">
-								<div class="hover-img">
-									<img src="images/project1.png" class="projects-img" alt="">
-									<div class="project-wrapper">
-										<a href="" class="zoom-link">www.site.ru</a>
-									</div>
-								</div>
-								<a href="http://www.site.ru" class="link_of_project">www.site.ru</a>
-								<div class="project-info">Информация о первом проекте</div>
-							</li>
-							<li class="item">
-								<div class="hover-img">
-									<img src="images/project2.png" class="projects-img" alt="">
-									<div class="project-wrapper">
-										<a href="" class="zoom-link">www.site.ru</a>
-									</div>
-								</div>
-								<a href="http://www.site.ru" class="link_of_project">www.site.ru</a>
-								<div class="project-info">Информация о втором проекте</div>
-							</li>
-							<li class="item">
-								<div class="hover-img">
-									<img src="images/project3.png" class="projects-img" alt="">
-									<div class="project-wrapper">
-										<a href="" class="zoom-link">www.site.ru</a>
-									</div>
-								</div>
-								<a href="http://www.site.ru" class="link_of_project">www.site.ru</a>
-								<div class="project-info">Информация о третьем проекте</div>
-							</li>
-							<li class="item">
-								<div class="hover-img">
-									<img src="images/project4.png" class="projects-img" alt="">
-									<div class="project-wrapper">
-										<a href="" class="zoom-link">www.site.ru</a>
-									</div>
-								</div>
-								<a href="http://www.site.ru" class="link_of_project">www.site.ru</a>
-								<div class="project-info">Информация о четвертом проекте</div>
-							</li>
-							<li class="item">
-								<a href="#" class="add_project">
-									<img src="images/add_project.png" alt="Новый проект" class="add_project-img">
-									<span class="add_project_text">Добавить проект</span>
-								</a>
-							</li>
-						</ul>
+					<section class="send_project">
+					<h2 class="header_of_sendpro">У вас интересный проект? Напишите мне</h2>
+						<form action="" name="" accept-charset="UTF-8" class="form">
+						<div class="item-name">
+							<label for="name" class="label">Имя</label>
+							<input type="text" class="textarea name" placeholder="Как к Вам обращаться">
+						</div>
+						<div class="item-email">
+							<label for="email" class="label">E-mail</label>
+							<input type="email" class="textarea email" placeholder="Куда мне писать">
+						</div>
+							<label for="message" class="label">Сообщение</label>
+							<input type="text" class="textarea message" placeholder="Кратко в чем суть">
+							<!-- <textarea name="text" id="" cols="30" rows="10" placeholder="Кратко в чем суть" class="text message"></textarea> -->
+							<div class="item-code">
+								<label for="message" class="label message">Введите код, указанный на картинке</label>
+								<input type="text" class="textarea img">
+								<input type="text" class="textarea code" placeholder="Введите код">
+							</div>
+							<input type="submit" value="Отправить" class="button submit">
+							<input type="reset" value="Очистить" class="button reset">
+							
+						</form>
 					</section>
 				</div>
 			</div>
