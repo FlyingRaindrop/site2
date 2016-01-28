@@ -8,6 +8,7 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="">
 	<title>Мой прекрасный сайт!</title>
+	<link rel="icon" type="image/png" href="images/favicon.ico" sizes="32x32">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/form.css">
 	<link rel="stylesheet" href="css/fonts.css">
@@ -75,11 +76,14 @@
 							<input type="email" class="textarea email" placeholder="Куда мне писать">
 						</div>
 							<label for="message" class="label">Сообщение</label>
-							<input type="text" class="textarea message" placeholder="Кратко в чем суть">
-							<!-- <textarea name="text" id="" cols="30" rows="10" placeholder="Кратко в чем суть" class="text message"></textarea> -->
+							<!-- <input type="text" class="textarea message" placeholder="Кратко в чем суть"> -->
+							<textarea name="text" id="" cols="30" rows="10" placeholder="Кратко в чем суть" class="text message"></textarea>
 							<div class="item-code">
 								<label for="message" class="label message">Введите код, указанный на картинке</label>
-								<input type="text" class="textarea img">
+								<!-- <input type="text" class="textarea img"> -->
+								<div class="captcha">
+									<img src="images/captcha.png" alt="captcha" class="captcha-img">
+								</div>
 								<input type="text" class="textarea code" placeholder="Введите код">
 							</div>
 							<input type="submit" value="Отправить" class="button submit">

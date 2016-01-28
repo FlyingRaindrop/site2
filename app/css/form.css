@@ -22,7 +22,7 @@
 .header_of_sendpro:after{
 	position: absolute;
 	content: " ";
-	top: 142px;
+	top: 140px;
 	left: 0;
 	width: 665px;
 	height: 20px;
@@ -44,9 +44,12 @@ input::-webkit-input-placeholder {
 	color: #67dffa;
 	font-size: 13px;
 	font-family: 'fira_sanslight';
-	vertical-align: top;
+	/*vertical-align: top;*/
 } 
-
+ textarea::-webkit-input-placeholder{padding:8px;color:#67dffa;font-size:13px;font-family: 'fira_sanslight';}
+ textarea::-moz-placeholder{padding:8px;color:#67dffa;font-size:13px;font-family: 'fira_sanslight';}
+ textarea:-moz-placeholder{padding:8px;color:#67dffa;font-size:13px;font-family: 'fira_sanslight';}
+ textarea:-ms-input-placeholder{padding:8px;color:#67dffa;font-size:13px;font-family: 'fira_sanslight';}
 /* ::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
 ::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
 :-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
@@ -65,17 +68,13 @@ input::-webkit-input-placeholder {
 :focus:-moz-placeholder           {line-height: 100px; transition: line-height 0.5s ease;}
 :focus:-ms-input-placeholder      {line-height: 100px; transition: line-height 0.5s ease;}
 
-input:-moz-placeholder {
-
-}
-
 .textarea.name{
 	width: 190px;
-	height: 25px;
+	height: 39px;
 }
 .textarea.email{
 	width: 190px;
-	height: 25px;
+	height: 39px;
 }
 .text.message{
 	resize: none;
@@ -94,17 +93,13 @@ input:-moz-placeholder {
 	border:1px solid #67dffa;
 	color: #67dffa;
 	outline: none;
-	width: 402px;
+	width: 410px;
 	height: 183px;
-}
-.textarea.img{
-	width: 190px;
-	height: 78px;
-	margin-right: 15px;
 }
 .textarea.code{
 	width: 193px;
 	height: 33px;
+	margin-top: 20px;
 }
 .label{
 	color: #a9abbe;
@@ -135,21 +130,19 @@ input:-moz-placeholder {
 	background-color: #849db5;
 }
 .button.submit:active{
-	/*border: 1px solid #48cbe8;*/
-	border-top: 2px solid #3ba8c0;
-	border-bottom: 1px solid #48cbe8;
+	border-bottom-color:transparent;
+    border-top: 2px solid #48cbe8;
 }
 .button.reset:active{
-	/*border: 1px solid #48cbe8;*/
+	border-bottom-color:transparent;
 	border-top: 2px solid #687b8f;
-	border-bottom: 1px solid #849db5;
 }
 .button.submit:hover{
-	border: 1px solid #48cbe8;
+	border-bottom-color:transparent;
 	/*padding-top: 2px;*/
 }
 .button.reset:hover{
-	border: 1px solid #849db5;
+	border-bottom-color:transparent;
 	/*padding-top: 2px;*/
 }
 .item-name{
@@ -165,5 +158,25 @@ input:-moz-placeholder {
 }
 .item-code{
 	margin-top: 15px;
-	margin-bottom: 20px; 
+	margin-bottom: 20px;
+
+}
+.captcha{
+	position: relative;
+	width: 190px;
+	height: 78px;
+	margin-right: 15px;
+	margin-bottom: 25px;
+	color:#67dffa;
+	border-radius: 3px;
+	border:1px solid #67dffa;
+	color: #67dffa;
+	padding-left: 10px; 
+	background-color: #fff;
+	float: left;
+}
+.captcha-img{
+	position: absolute;
+	top: 20px;
+	left: 20px;
 }

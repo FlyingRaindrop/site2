@@ -42,7 +42,10 @@
 }
 .aboutbox .aboutbox-list{
 	margin: 0;
-	padding: 20px 0 45px 50px;
+	padding: 20px 0 50px 50px;
+}
+.aboutbox .aboutbox-list.common{
+	padding-bottom: 0;
 }
 .aboutbox .aboutbox-item.icon-experience .where{
 	padding: 10px;
@@ -64,13 +67,6 @@
 }
 .aboutbox-item .where{
 	display: block;
-	/*font-family: 'helveticaneuecyrbold';*/
-	/*font-size: 16px;*/
-}
-.aboutbox-item .period{
-	/*font-family: 'helveticaneuecyrthin';*/
-	/*font-size: 15px;*/
-	/*line-height: 1;*/
 }
 
 /*Первый блок*/
@@ -85,9 +81,6 @@
     border: 3px solid #35a8bf; /* Параметры рамки */
     box-shadow: 0 0 7px #3C8C9C; /* Параметры тени */
 }
-.aboutbox .aboutbox-list.common{
-	/*position: relative;*/
-}
 .aboutbox .aboutbox-list.common .aboutbox-item:last-child{
 	position: relative;
 }
@@ -97,6 +90,7 @@
 	font-style: normal;
 	font-size: 17px;
 	margin: 15px;
+	color: #4a545d;
 }
 .fira_sansbook{
 	font-size: 15px;
@@ -105,23 +99,39 @@
 .aboutbox-list.common .aboutbox-item{
 	margin: 0 0 8px 0;
 }
-.skills{
-	background: linear-gradient(#3ba8c0 11px, #2e8ca2 13px);
-	border-radius: 4px;
-	padding: 3px 15px;
-	margin: 5px;
-	color: #fff;
-	font-family: 'proxima_nova_condensedSBd';
-	font-weight: normal;
-	font-style: normal;
-	font-size: 14px;
-}
+ 
 .proxima_nova{
 	position: absolute;
 	left: 360px;
 	top:20px;
-	/*margin: 9px 5px 5px 282px;*/
 }
+
+.skills-list{
+    float: right;
+    margin-right: 20px;
+    padding-left: 0;
+    padding-top: 5px;
+    width: 220px;    
+    font-size: 0;
+}
+.skill{
+	background: linear-gradient(#3ba8c0 11px, #2e8ca2 13px);
+	background: rgb(59,168,192);    
+    background: -moz-linear-gradient(top,  rgba(59,168,192,1) 0%, rgba(59,168,192,1) 50%, rgba(46,140,162,1) 50%, rgba(46,140,162,1) 100%);
+    background: -webkit-linear-gradient(top,  rgba(59,168,192,1) 0%,rgba(59,168,192,1) 50%,rgba(46,140,162,1) 50%,rgba(46,140,162,1) 100%);
+	padding: 3px 15px;
+	margin: 5px;
+	color: #fff;
+	font-family: 'proxima_nova_condensedSBd';
+    display: inline-block;
+    font-size: 14px;
+    -webkit-border-radius: 4px;
+       -moz-border-radius: 4px;
+            border-radius: 4px;
+}
+
+html.no-cssgradients .skill{background: url(../images/skills-ie.png) 0 0 repeat #2E8CA2;}
+
 /*Второй блок*/
 .content_header.experience{
 	width: 168px;
