@@ -44,7 +44,6 @@ input::-webkit-input-placeholder {
 	color: #67dffa;
 	font-size: 13px;
 	font-family: 'fira_sanslight';
-	/*vertical-align: top;*/
 } 
  textarea::-webkit-input-placeholder{padding:8px;color:#67dffa;font-size:13px;font-family: 'fira_sanslight';}
  textarea::-moz-placeholder{padding:8px;color:#67dffa;font-size:13px;font-family: 'fira_sanslight';}
@@ -83,7 +82,7 @@ input::-webkit-input-placeholder {
 	border:1px solid #67dffa;
 	color: #67dffa;
 	outline: none;
-	width: 402px;
+	width: 412px;
 	height: 183px;
 }
 .textarea.message{

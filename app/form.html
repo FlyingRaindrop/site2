@@ -12,8 +12,23 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/form.css">
 	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="bower/normalize-css/normalize.css"></head>
+	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+	<!--[if lt IE 9]> 
+    	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    	<script>window.jQuery || document.write ('<script src="js/html5shiv.js"><\/script>')</script>
+    <![endif]-->
+	<!--[if lte IE 8]>
+			<link href="css/ie8.css" rel="stylesheet">
+	<![endif]-->
+	</head>
 <body>
+<!-- [if lt IE8]>
+            <p class="browsehappy">
+                Ваш браузер устарел. Пожалуйста
+                <a target="_blank" href="http://browsehappy.com/"> обновите</a>
+                его.
+            </p>
+<![endif]-->
 	<div class="wrapper">
 		<div class="container clearfix">
 			<header class="header">
@@ -80,7 +95,6 @@
 							<textarea name="text" id="" cols="30" rows="10" placeholder="Кратко в чем суть" class="text message"></textarea>
 							<div class="item-code">
 								<label for="message" class="label message">Введите код, указанный на картинке</label>
-								<!-- <input type="text" class="textarea img"> -->
 								<div class="captcha">
 									<img src="images/captcha.png" alt="captcha" class="captcha-img">
 								</div>
@@ -88,7 +102,6 @@
 							</div>
 							<input type="submit" value="Отправить" class="button submit">
 							<input type="reset" value="Очистить" class="button reset">
-							
 						</form>
 					</section>
 				</div>

@@ -57,7 +57,7 @@ body {
 	position: absolute;
 	top:117px;
 	left: 0;
-	height: 2px;
+	height: 3px;
 	width: 1400px;
 	background: linear-gradient(90deg, #fff 50px, #1c667a 700px, #fff 1350px, #fff 400px ) left top repeat-x;; 
 	background: url(../images/line.png);
@@ -244,19 +244,21 @@ body {
 	background-color: #eff3f7;
 }
 .container-footer{
-	max-width: 1000px; 
+	max-width: 1200px; 
 	min-width: 960px;
 	/*width: 1400px;*/
 	margin: 0 auto;
 	position: relative;
+
 }
 .container-footer:before{
 	content: '';
 	position: absolute;
-	height: 2px;
+	left: 0;
+	height: 3px;
 	width: 1400px;
 	color: #3C21C2;
-	background: linear-gradient(90deg, #fff 50px, #1c667a 700px, #fff 1350px, #fff 400px ) left top repeat-x;
+	background: linear-gradient(90deg, #fff 50px, #1c667a 700px, #fff 1050px ) left top repeat-x;
 	background: url(../images/line.png);
 }
 /*.footer .copyright{
@@ -282,7 +284,7 @@ body {
 
  .container-footer .copyright{
  	position: absolute;
- 	left: 280px;
+ 	left: 380px;
  	padding-top: 30px;
  	text-align: center;
  	font-size: 13px;
