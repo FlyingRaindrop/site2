@@ -39,33 +39,59 @@
 	color: #67dffa;
 	padding-left: 10px; 
 	outline: none;
+	font-family: 'fira_sanslight';
+    font-size: 13px;
+}
+.text.message{
+	resize: none;
+	color:#67dffa;
+	border-radius: 3px;
+	border:1px solid #67dffa;
+	padding: 10px;
+	color: #67dffa;
+	outline: none;
+	width: 405px;
+	height: 183px;
+	font-size: 13px;
+	font-family: 'fira_sanslight';
 }
 input::-webkit-input-placeholder {
 	color: #67dffa;
 	font-size: 13px;
 	font-family: 'fira_sanslight';
 } 
- textarea::-webkit-input-placeholder{padding:8px;color:#67dffa;font-size:13px;font-family: 'fira_sanslight';}
- textarea::-moz-placeholder{padding:8px;color:#67dffa;font-size:13px;font-family: 'fira_sanslight';}
- textarea:-moz-placeholder{padding:8px;color:#67dffa;font-size:13px;font-family: 'fira_sanslight';}
- textarea:-ms-input-placeholder{padding:8px;color:#67dffa;font-size:13px;font-family: 'fira_sanslight';}
-/* ::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+input::-moz-placeholder {
+	color: #67dffa;
+	font-size: 13px;
+	font-family: 'fira_sanslight';
+}
+input:-moz-placeholder {
+	color: #67dffa;
+	font-size: 13px;
+	font-family: 'fira_sanslight';
+}
+input:-ms-input-placeholder {
+	color: #67dffa;
+	font-size: 13px;
+	font-family: 'fira_sanslight';
+}
+textarea::-webkit-input-placeholder{color:#67dffa;font-size:13px;font-family: 'fira_sanslight';}
+textarea::-moz-placeholder{padding:8px;color:#67dffa;font-size:13px;font-family: 'fira_sanslight';}
+textarea:-moz-placeholder{padding:8px;color:#67dffa;font-size:13px;font-family: 'fira_sanslight';}
+textarea:-ms-input-placeholder{padding:8px;color:#67dffa;font-size:13px;font-family: 'fira_sanslight';}
+
+input::-webkit-input-placeholder       {line-height: 20px;  transition: line-height 0.5s ease;}
+input:-ms-input-placeholder            {line-height: 20px;  transition: line-height 0.5s ease;}
+input:focus::-webkit-input-placeholder {line-height: 100px; transition: line-height 0.5s ease;}
+input:focus:-ms-input-placeholder      {line-height: 100px; transition: line-height 0.5s ease;}
+.text.message::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+.text.message:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
 ::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
 :-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
 :-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
-:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
 :focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
 :focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
-:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;} */
-
-::-webkit-input-placeholder       {line-height: 20px;  transition: line-height 0.5s ease;}
-::-moz-placeholder                {line-height: 20px;  transition: line-height 0.5s ease;}
-:-moz-placeholder                 {line-height: 20px;  transition: line-height 0.5s ease;}
-:-ms-input-placeholder            {line-height: 20px;  transition: line-height 0.5s ease;}
-:focus::-webkit-input-placeholder {line-height: 100px; transition: line-height 0.5s ease;}
-:focus::-moz-placeholder          {line-height: 100px; transition: line-height 0.5s ease;}
-:focus:-moz-placeholder           {line-height: 100px; transition: line-height 0.5s ease;}
-:focus:-ms-input-placeholder      {line-height: 100px; transition: line-height 0.5s ease;}
+:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}  
 
 .textarea.name{
 	width: 190px;
@@ -74,26 +100,6 @@ input::-webkit-input-placeholder {
 .textarea.email{
 	width: 190px;
 	height: 39px;
-}
-.text.message{
-	resize: none;
-	color:#67dffa;
-	border-radius: 3px;
-	border:1px solid #67dffa;
-	color: #67dffa;
-	outline: none;
-	width: 412px;
-	height: 183px;
-}
-.textarea.message{
-	resize: none;
-	color:#67dffa;
-	border-radius: 3px;
-	border:1px solid #67dffa;
-	color: #67dffa;
-	outline: none;
-	width: 410px;
-	height: 183px;
 }
 .textarea.code{
 	width: 193px;
@@ -138,11 +144,9 @@ input::-webkit-input-placeholder {
 }
 .button.submit:hover{
 	border-bottom-color:transparent;
-	/*padding-top: 2px;*/
 }
 .button.reset:hover{
 	border-bottom-color:transparent;
-	/*padding-top: 2px;*/
 }
 .item-name{
 	width: 200px;

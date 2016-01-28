@@ -4,6 +4,7 @@
 	float: left;
 }
 .content_header{
+	display: inline-block;
 	color: #3ba8c0;
 	margin: 0;
 	padding: 12px 12px 12px 25px;
@@ -65,12 +66,16 @@
 .aboutbox .aboutbox-item:last-child{
 	margin-bottom: 0;
 }
+.aboutbox.education{
+	margin-bottom: 40px;
+}
 .aboutbox-item .where{
 	display: block;
 }
 
 /*Первый блок*/
 .content_header.common{
+	display: block;
 	width: 300px;
 }
 .my_photo{
@@ -113,6 +118,7 @@
     padding-top: 5px;
     width: 220px;    
     font-size: 0;
+    margin-bottom: 20px;
 }
 .skill{
 	background: linear-gradient(#3ba8c0 11px, #2e8ca2 13px);
@@ -133,17 +139,11 @@
 html.no-cssgradients .skill{background: url(../images/skills-ie.png) 0 0 repeat #2E8CA2;}
 
 /*Второй блок*/
-.content_header.experience{
-	width: 168px;
-}
 .aboutbox-list .icon-experience{
 	background: url(../images/bag.png) 1px center no-repeat;
 }
 
 /*Третий блок*/
-.content_header.education{
-	width: 168px;
-}
 .aboutbox-list .icon-college{
 	background: url(../images/hat.png) 1px center no-repeat;
 }

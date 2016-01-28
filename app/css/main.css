@@ -44,10 +44,12 @@ body {
 .header{
 	height: 119px;
 	background-color: #eff3f7;
+	/*width: 500px;*/
 }
 .container-big{
 	max-width: 1400px;
 	min-width: 1150px; 
+	/*width: 1000px;*/
 	position: relative;
 	height: 100%;
 	margin: 0 auto;
@@ -63,8 +65,10 @@ body {
 	background: url(../images/line.png);
 }
 .logo{
-	position: absolute;
-	top:10px; 
+/*	position: absolute;
+	top:10px; */
+	float: left;
+	margin: 10px;
 }
 .logo-in-header{
 	width: 200px
@@ -73,10 +77,12 @@ body {
 	opacity: 0.8
 }
 .sicon{
- 	position: absolute;
-	right: 0px;
-	top: 25px;
-	margin: 0px; 
+ /* 	position: absolute;
+ 	right: 0px;
+ 	top: 25px;
+ 	margin: 0px;  */
+ 	float: right;
+	margin: 20px;
 }
 
 /*Спрайт*/
@@ -183,6 +189,9 @@ body {
 }
 .list_of_main_navigation .fira_sansbook:hover{
 	color: #3ba8c0;
+}
+.bottom-lineIE8{
+	border-bottom: #eff3f7;
 }
 /*Конец Главного меню*/
 

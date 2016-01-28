@@ -49,13 +49,11 @@
 	color: #606972;
 }
 .header_of_projects{
-	width: 170px;
+	display: inline-block;
 	color: #3ba8c0;
 	margin: 0;
 	padding: 12px 12px 12px 25px;
 	border-bottom: 2px solid #3ba8c0;
-}
-.header_of_projects{
 	font-family: 'fira_sansbook';
 	font-size: 27px;
 	font-weight: normal;
@@ -97,12 +95,21 @@
     text-align: center;
     transform: scale(0);
     -webkit-transform: scale(0);
+       -moz-transform: scale(0);
+        -ms-transform: scale(0);
+         -o-transform: scale(0);
     transition: all .5s ease-in-out;
     -webkit-transition: all .5s ease-in-out;
+       -moz-transition: all .5s ease-in-out;
+         -o-transition: all .5s ease-in-out;
+
 }
 .item:hover .project-wrapper {	
 	transform: scale(1);
 	-webkit-transform: scale(1);
+	 -moz-transform: scale(1);
+        -ms-transform: scale(1);
+         -o-transform: scale(1);
 }
 .item .zoom-link {
     font-size: 12px;
