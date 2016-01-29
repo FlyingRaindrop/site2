@@ -9,25 +9,10 @@
 	margin: 0;
 	padding: 12px 12px 12px 25px;
 	border-bottom: 2px solid #3ba8c0;
-}
-.content_header.fira_sansbook{
 	font-family: 'fira_sansbook';
 	font-size: 27px;
 	font-weight: normal;
     font-style: normal;
-
-}
-.aboutbox-item .fira_sansbook{
-	font-family: 'fira_sansbook';
-	font-weight: normal;
-    font-style: normal;
-    color: #4a545d;
-}
-.aboutbox-item .where.fira_sansbook{
-	font-size: 17px;
-}
-.aboutbox-item .period.fira_sansbook{
-	font-size: 15px;
 }
 .aboutbox{
 	width: 650px;
@@ -41,36 +26,41 @@
 .aboutbox:last-child{
 	margin: 20px 0 40px 60px;
 }
+.aboutbox-item{
+    color: #4a545d;
+    margin-bottom: 20px;
+    font-family: 'fira_sanslight';
+	font-weight: normal;
+	font-style: normal;
+}
+.aboutbox-item .where{
+	font-size: 17px;
+	display: block;
+	font-family: 'fira_sansbook';
+	font-weight: normal;
+    font-style: normal;
+}
+.aboutbox-item .period{
+	font-size: 15px;
+}
 .aboutbox .aboutbox-list{
 	margin: 0;
-	padding: 20px 0 50px 50px;
+	padding: 20px 0 50px 40px;
+}
+.aboutbox .aboutbox-list.experience{
+	padding-top:25px;
 }
 .aboutbox .aboutbox-list.common{
 	padding: 0;
 }
-.aboutbox .aboutbox-item.icon-experience .where{
-	padding: 10px;
-}
-.aboutbox .aboutbox-item{
-	margin-bottom: 20px;	
-}
-.aboutbox .aboutbox-item{
-	margin-bottom: 20px;	
-}
-.aboutbox .aboutbox-item.icon-experience {
-	padding: 0 0 0 65px;
-}
-.aboutbox-list.education .aboutbox-item {
-	padding: 0 0 0 84px;
+.aboutbox-list.experience .aboutbox-item{
+	margin-bottom: 30px;
 }
 .aboutbox .aboutbox-item:last-child{
 	margin-bottom: 0;
 }
 .aboutbox.education{
 	margin-bottom: 40px;
-}
-.aboutbox-item .where{
-	display: block;
 }
 
 /*Первый блок*/
@@ -95,7 +85,7 @@
 .aboutbox .aboutbox-list.common .aboutbox-item:last-child{
 	position: relative;
 }
-.fira_sansmedium{
+.request{
 	font-family: 'fira_sansmedium';
 	font-weight: normal;
 	font-style: normal;
@@ -103,20 +93,9 @@
 	margin: 15px;
 	color: #4a545d;
 }
-.fira_sansbook{
-	font-size: 15px;
-	margin: 0;
-}
 .aboutbox-list.common .aboutbox-item{
 	margin: 0 0 8px 0;
 }
- 
-.proxima_nova{
-	position: absolute;
-	left: 360px;
-	top:20px;
-}
-
 .skills-list{
     float: right;
     margin-right: 20px;
@@ -137,24 +116,61 @@
 	font-family: 'proxima_nova_condensedSBd';
     display: inline-block;
     font-size: 14px;
-    -webkit-border-radius: 4px;
-       -moz-border-radius: 4px;
-            border-radius: 4px;
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
 }
-
 html.no-cssgradients .skill{background: url(../images/skills-ie.png) 0 0 repeat #2E8CA2;}
 
-/*Второй блок*/
-.aboutbox-list .icon-experience{
-	background: url(../images/bag.png) 1px center no-repeat;
+.aboutbox-item{
+	position: relative;
+}
+.text{
+	padding: 0 0 0 86px;
+	line-height: 1.3;
 }
 
-/*Третий блок*/
-.aboutbox-list .icon-college{
-	background: url(../images/hat.png) 1px center no-repeat;
+/*Спрайт для иконок в контенте*/
+.spritesheet {
+	background-image: url(../images/education.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 100px;
+	/*Выравнивание по вертикали*/
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) translateX(-50%); 
+	left: 38px;
 }
-.aboutbox-list .icon-course{
-	background: url(../images/list.png) 11px center no-repeat;
+.sprite-bag {
+    width: 36px;
+    height: 34px;
+    background-position: -5px -5px;
+}
+.ie8 .sprite-bag{
+	position: absolute;
+	top: 0px;
+	left: 20px;
+}
+.sprite-hat {
+    width: 41px;
+    height: 23px;
+    background-position: -5px -49px;
+}
+.ie8 .sprite-hat{
+	position: absolute;
+	top: 5px;
+	left: 20px;
+}
+.sprite-list {
+    width: 26px;
+    height: 32px;
+    background-position: -5px -82px;
+}
+.ie8 .sprite-list{
+	position: absolute;
+	top: 10px;
+	left: 30px;
 }
 
 /*Конец Контента сайта*/

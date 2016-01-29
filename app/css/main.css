@@ -42,7 +42,7 @@ body {
 .header{
 	height: 119px;
 	background-color: #eff3f7;
-	/*width: 500px;*/
+	/*width: 600px;*/
 }
 .container-big{
 	max-width: 1200px;
@@ -82,6 +82,7 @@ body {
 }
 .sicon-item{
 	display: inline-block;
+	margin: 10px;
 }
 /*Спрайт*/
 .sprite {
@@ -93,7 +94,6 @@ body {
 .sprite-facebook {
     width: 47px;
     height: 47px;
-    margin: 12px;
     background-position: -5px -5px;
 }
 .sprite-facebook:hover {
@@ -102,7 +102,6 @@ body {
 .sprite-gihtub {
     width: 47px;
     height: 47px;
-    margin: 12px;
     background-position: -119px -5px;
 }
 .sprite-gihtub:hover {
@@ -111,7 +110,6 @@ body {
 .sprite-tw {
     width: 47px;
     height: 47px;
-    margin: 12px;
     background-position: -233px -5px;
 }
 .sprite-tw:hover {
@@ -120,7 +118,6 @@ body {
 .sprite-vk {
     width: 47px;
     height: 47px;
-    margin: 12px;
     background-position: -347px -5px;
 }
 .sprite-vk:hover {
@@ -146,6 +143,9 @@ body {
 	margin-top: 40px;
 	border-radius: 4px;
 }
+.ul_of_main_navigation{
+	margin: 0;padding: 0;
+}
 .list_of_main_navigation{
 	height: 75px;
 	margin: 0 11px;
@@ -154,14 +154,21 @@ body {
 .list_of_main_navigation:last-child{
 	border-bottom: none;
 }
-.list_of_main_navigation .fira_sansbook{
+.bottom-lineIE8{
+	border-bottom: #eff3f7;
+}
+.list_of_main_navigation .link_of_main_navigation{
 	font-family: 'fira_sansbook';
 	font-size: 21px;
 	font-weight: normal;
     font-style: normal;
+    display: block;
+	color: #959aa8;
+	margin-left: 16px;
+	padding: 20px 0;
 }
-.ul_of_main_navigation{
-	margin: 0;padding: 0;
+.list_of_main_navigation .link_of_main_navigation:hover{
+	color: #3ba8c0;
 }
 .list_of_main_navigation.common {
 	background-color: #3ba8c0; 
@@ -170,26 +177,12 @@ body {
 	padding-left: 11px;
 	margin-top: -2px;
 }
-.list_of_main_navigation.common .fira_sansbook{
+.list_of_main_navigation.common .link_of_main_navigation{
 	color: #fff;
 	font-size: 21px;
 }
-.list_of_main_navigation.common .fira_sansbook:hover{
+.list_of_main_navigation.common .link_of_main_navigation:hover{
 	color: #fff;
-}
-.list_of_main_navigation .fira_sansbook{
-	font-family: 'fira_sansbook';
-	display: block;
-	color: #959aa8;
-	font-size: 21px;
-	margin-left: 16px;
-	padding: 20px 0;
-}
-.list_of_main_navigation .fira_sansbook:hover{
-	color: #3ba8c0;
-}
-.bottom-lineIE8{
-	border-bottom: #eff3f7;
 }
 /*Конец Главного меню*/
 
