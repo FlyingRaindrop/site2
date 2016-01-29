@@ -46,7 +46,7 @@
 	padding: 20px 0 50px 50px;
 }
 .aboutbox .aboutbox-list.common{
-	padding-bottom: 0;
+	padding: 0;
 }
 .aboutbox .aboutbox-item.icon-experience .where{
 	padding: 10px;
@@ -57,7 +57,7 @@
 .aboutbox .aboutbox-item{
 	margin-bottom: 20px;	
 }
-.aboutbox .aboutbox-item {
+.aboutbox .aboutbox-item.icon-experience {
 	padding: 0 0 0 65px;
 }
 .aboutbox-list.education .aboutbox-item {
@@ -75,16 +75,22 @@
 
 /*Первый блок*/
 .content_header.common{
-	display: block;
-	width: 300px;
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.img-item{
+	float: left;
+	margin: 15px 15px 0px 55px;
+	width: 145px;
 }
 .my_photo{
+	width: 100%;
+	border-radius: 100px; 
+    border: 3px solid #35a8bf; 
+    box-shadow: 0 0 7px #3C8C9C;
+}
+.aboutbox-list.common{
 	float: left;
-	margin: 35px 10px 80px 55px;
-	width: 150px;
-	border-radius: 100px; /* Радиус скругления */
-    border: 3px solid #35a8bf; /* Параметры рамки */
-    box-shadow: 0 0 7px #3C8C9C; /* Параметры тени */
 }
 .aboutbox .aboutbox-list.common .aboutbox-item:last-child{
 	position: relative;

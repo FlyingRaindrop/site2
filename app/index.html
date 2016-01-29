@@ -37,14 +37,24 @@
 				<img src="images/logo_of_site.png" alt="Логотип сайта" class="logo-in-header" title="Логотип сайта">
 			</div>
 			<div class="sicon">
-				<a href="http://vk.com/gnche" target="_blank" class="sprite sprite-vk">https://www.vk.com</a>
-				<a href="#" target="_blank" class="sprite sprite-tw">https://twitter.com/</a>
-				<a href="#" target="_blank" class="sprite sprite-facebook">ttps://www.facebook.com/</a>
-				<a href="https://github.com/FlyingRaindrop" target="_blank" class="sprite sprite-gihtub">https://github.com/</a>
+			<ul class="sicon-list">
+				<li class="sicon-item">
+					<a href="http://vk.com/gnche" target="_blank" class="sprite sprite-vk">https://www.vk.com</a>
+				</li>
+				<li class="sicon-item">
+					<a href="#" target="_blank" class="sprite sprite-tw">https://twitter.com/</a>
+				</li>
+				<li class="sicon-item">
+					<a href="#" target="_blank" class="sprite sprite-facebook">ttps://www.facebook.com/</a>
+				</li>
+				<li class="sicon-item">
+					<a href="https://github.com/FlyingRaindrop" target="_blank" class="sprite sprite-gihtub">https://github.com/</a>
+				</li>
+			</ul>
 			</div>
 		</div>
 		</header>
-		<div class="page">
+		<div class="page clearfix">
 		<div class="static_info">
 			<nav class="main_navigation">
 				<ul class="ul_of_main_navigation">
@@ -63,25 +73,29 @@
 				<h2 class="header_of_address">Контакты</h2>
 				<ul class="list_of_address">
 					<li class="item_of_address mail">
-						<img src="images/mail.png" alt="Почта">
+						<i class="sprite-address sprite-mail"></i>
 						<a href="mailto:gnch.ru@mail.ru" target="_blank" class="mail href">gnch.ru@mail.ru</a>
 					</li>
 					<li class="item_of_address tel">
-						<img src="images/tel.png" alt="Телефон">
+						<i class="sprite-address sprite-tel"></i>
 						<a href="tel:+375299718060" target="_blank"class="tel href">+375299718060</a>
 					</li>
 					<li class="item_of_address skype">
-						<img src="images/skype.png" alt="Skype">
+						<i class="sprite-address sprite-skype"></i>
 						<a href="skype:flyingraindrop" target="_blank" class="skype href">flyingraindrop</a>
 					</li>
 				</ul>
 			</address>
 		</div>
 		<div class="dynamic_info">
-			<section class="aboutbox common">
-				<h2 class="content_header common fira_sansbook">Основная информация</h2>
+			<section class="aboutbox common clearfix">
+				<div class="header-item">
+					<h2 class="content_header common fira_sansbook">Основная информация</h2>
+				</div>
+				<div class="img-item">
 					<img src="images/my_photo.jpg" alt="my_photo" class="my_photo">
-					<ul class="aboutbox-list common">
+				</div>
+					<ul class="aboutbox-list common ">
 						<li class="aboutbox-item">
 						<p class="fira_sansbook"><span class="fira_sansmedium">Меня зовут:	</span>Гивойно Наталья Чеславовна</p>
 						</li>
@@ -133,8 +147,12 @@
 		</div>
 		<footer class="footer">
 			<div class="container-footer clearfix">
-				<a href="#" class="login">Войти</a>
-				<span class="copyright">&copy; 2016 Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
+				<div class="item-login">
+					<a href="#" class="login">Войти</a>
+				</div>
+				<div class="item-copyright">
+					<span class="copyright">&copy; 2016 Это мой сайт, пожалуйста, не копируйте и не воруйте его</span>
+				</div>
 			</div>
 		</footer>
 	</div>  

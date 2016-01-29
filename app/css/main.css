@@ -26,11 +26,10 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 70px;
+  height: 85px;
 }
 /*Конец Прибитый футер*/
 
-/*Чищу контейнер*/
 .clearfix:before, .clearfix:after{
 	content: " ";
 	display: table;
@@ -38,7 +37,6 @@ body {
 .clearfix:after{
 	clear:both;
 }
-/*Конец Чищу контейнер*/
 
 /*Шапка сайта*/
 .header{
@@ -47,8 +45,8 @@ body {
 	/*width: 500px;*/
 }
 .container-big{
-	max-width: 1400px;
-	min-width: 1150px; 
+	max-width: 1200px;
+	min-width: 970px; 
 	/*width: 1000px;*/
 	position: relative;
 	height: 100%;
@@ -57,7 +55,7 @@ body {
 .container-big:after{
 	content: '';
 	position: absolute;
-	top:117px;
+	top:115px;
 	left: 0;
 	height: 3px;
 	width: 1400px;
@@ -65,8 +63,6 @@ body {
 	background: url(../images/line.png);
 }
 .logo{
-/*	position: absolute;
-	top:10px; */
 	float: left;
 	margin: 10px;
 }
@@ -77,14 +73,16 @@ body {
 	opacity: 0.8
 }
 .sicon{
- /* 	position: absolute;
- 	right: 0px;
- 	top: 25px;
- 	margin: 0px;  */
  	float: right;
 	margin: 20px;
 }
-
+.sicon-list{
+	margin: 0;
+	padding: 0;
+}
+.sicon-item{
+	display: inline-block;
+}
 /*Спрайт*/
 .sprite {
     background-image: url(../images/spritesheet.png);
@@ -207,19 +205,51 @@ body {
 	background-color: #3BA8C0;
 	border-radius: 3px 3px 0 0;
 	color: #fff;
-	padding: 5px 15px 5px 20px;
+	padding: 5px 15px 0px 20px;
 	margin: 0;
 	font-family: 'fira_sansbook';
 	font-size: 21px;
 	font-weight: normal;
     font-style: normal;
 }
+
+/*Спрайт для контактов*/
+.sprite-address {
+    background-image: url(../images/address.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: -9999px;
+    padding-left: 18px;
+    position: relative;
+    top: 15%;
+}
+.sprite-mail {
+    width: 22px;
+    height: 18px;
+    background-position: -5px -5px;
+}
+.sprite-skype {
+    width: 20px;
+    height: 20px;
+    background-position: -5px -31px;
+}
+.sprite-tel {
+    width: 19px;
+    height: 20px;
+    background-position: -5px -61px;
+}
+/*Конец спрайта для контактов*/
+
+.list_of_address{
+	margin: 0; padding: 0;
+}
 .list_of_address .item_of_address{
 	height: 25px;
 	padding: 8px 0px 8px 40px;
 }
 .list_of_address .item_of_address .href{
-	color: #fff; display: block;
+	color: #fff; 
+	/*display: block;*/
 	font-family: 'fira_sansbook';
 	font-size: 17px;
 	font-weight: normal;
@@ -228,12 +258,6 @@ body {
 .list_of_address .href:hover{
 	text-decoration: underline;
 	cursor: pointer;
-}
-.list_of_address img{
-	padding: 3px 15px 0 0; display: block; float: left
-}
-.list_of_address{
-	margin: 0; padding: 0;
 }
 .mail{
 	background-color: #41b9d4; 
@@ -249,16 +273,16 @@ body {
 
 /*Подвал*/
  .footer{
-	height: 85px;
+	/*height: 85px;*/
 	background-color: #eff3f7;
+	/*height: 100%;*/
 }
 .container-footer{
-	max-width: 1200px; 
+	max-width: 1000px; 
 	min-width: 960px;
 	/*width: 1400px;*/
 	margin: 0 auto;
 	position: relative;
-
 }
 .container-footer:before{
 	content: '';
@@ -270,48 +294,55 @@ body {
 	background: linear-gradient(90deg, #fff 50px, #1c667a 700px, #fff 1050px ) left top repeat-x;
 	background: url(../images/line.png);
 }
-/*.footer .copyright{
-	float: left;
-	display: block;
+
+/*  .container-footer .copyright{
+	position: absolute;
+	left: 380px;
+	padding-top: 30px;
 	text-align: center;
-	margin: 0; 
-	padding: 30px 30px 30px 235px;
+	font-size: 13px;
 	font-family: 'fira_sanslight';
-	font-weight: normal;
-	font-style: normal;
 	color: #4a545d;
 }
 .login{
-	float: left;
-	margin: 25px 25px 25px 175px;
+	position: absolute;
+	top:26px;
+	left: 50px;
+	background: url(../images/login.png) no-repeat; width: 20px; height: 33px;
+	display: block;
+	height: 40px;
 	text-indent: -9999px;
-	background: url(../images/login.png) no-repeat; width: 20px; height: 33px
-}
-.login:hover {
-	background: url(../images/login-hover.png) no-repeat;width: 20px; height: 33px
-}*/ 
+} 
+ .login:hover {
+ 	background: url(../images/login-hover.png) no-repeat;width: 20px; height: 33px
+ }  */
 
- .container-footer .copyright{
- 	position: absolute;
- 	left: 380px;
- 	padding-top: 30px;
- 	text-align: center;
- 	font-size: 13px;
- 	/*float: left;*/
- 	font-family: 'fira_sanslight';
+ .item-login{
+	float: left;
+	margin-top: 30px;
+}
+.item-copyright{
+	float: right;
+	margin-top: 30px;
+	width: 890px;
+	text-align: center;
+}
+.container-footer .copyright{
+	width: 100%;
+	padding-top: 30px;
+	padding: 0 50px;
+	font-size: 13px;
+	font-family: 'fira_sanslight';
 	color: #4a545d;
- }
- .login{
- 	position: absolute;
- 	top:26px;
- 	left: 50px;
- 	background: url(../images/login.png) no-repeat; width: 20px; height: 33px;
- 	display: block;
- 	height: 40px;
- 	float: left;
+}
+.login{
+	background: url(../images/login.png) no-repeat; width: 20px; height: 33px;
+	display: block;
+	height: 40px;
 	text-indent: -9999px;
- }
+} 
  .login:hover {
  	background: url(../images/login-hover.png) no-repeat;width: 20px; height: 33px
  }  
+
 /*Конец Подвала*/
