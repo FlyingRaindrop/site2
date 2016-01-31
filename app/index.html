@@ -8,7 +8,8 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="">
 	<title>Мой прекрасный сайт!</title>
-	<link rel="icon" type="image/png" href="images/favicon.ico" sizes="32x32">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/fonts.css">
@@ -34,7 +35,10 @@
 			<header class="header">
 				<div class="container-big">
 					<div class="logo">
-						<img src="images/logo_of_site.png" alt="Логотип сайта" class="logo-in-header" title="Логотип сайта"></div>
+					<a href="index.html" class="logo-link">
+						<img src="images/logo_of_site.png" alt="Логотип сайта" class="logo-in-header" title="Логотип сайта">
+					</a>
+						</div>
 					<div class="sicon">
 						<ul class="sicon-list">
 							<li class="sicon-item">
@@ -85,46 +89,56 @@
 					</address>
 				</div>
 				<div class="dynamic_info">
-					<section class="aboutbox common clearfix">
+					<section class="aboutbox clearfix">
 						<div class="header-item">
-							<h2 class="content_header common">Основная информация</h2>
+							<h2 class="content_header">Основная информация</h2>
 						</div>
 						<div class="img-item">
 							<img src="images/my_photo.jpg" alt="my_photo" class="my_photo"></div>
 						<ul class="aboutbox-list common ">
 							<li class="aboutbox-item">
+							<div class="common-text">
 								<span class="request">Меня зовут:</span>
 								<span class="answer">Гивойно Наталья Чеславовна</span>
+							</div>
 							</li>
 							<li class="aboutbox-item">
+							<div class="common-text">
 								<span class="request">Мой возраст:</span>
 								<span class="answer">20 лет</span>
+								</div>
 							</li>
 							<li class="aboutbox-item">
+							<div class="common-text">
 								<span class="request">Мой город:</span>
 								<span class="answer">Минск, Беларусь</span>
+								</div>
 							</li>
 							<li class="aboutbox-item">
+							<div class="common-text">
 								<span class="request">Моя специализация:</span>
-								<span class="answer">FRONTEND разработчик</span>
+								<span class="answer">FRONTEND-разработчик</span>
+								</div>
 							</li>
 							<li class="aboutbox-item clearfix">
+							<div class="common-text">
 								<span class="skills-header request">Ключивые навыки:</span>
 								<ul class="skills-list">
 									<li class="skill">html</li>
-									<li class="skill">CSS</li>
+									<li class="skill">css</li>
 									<li class="skill">javascript</li>
 									<li class="skill">jquery</li>
 									<li class="skill">bower</li>
 									<li class="skill">git</li>
 								</ul>
+								</div>
 							</li>
 						</ul>
 					</section>
-					<section class="aboutbox experience">
-						<h2 class="content_header experience">Опыт работы</h2>
-						<ul class="aboutbox-list experience">
-							<li class="aboutbox-item icon-experience">
+					<section class="aboutbox">
+						<h2 class="content_header">Опыт работы</h2>
+						<ul class="aboutbox-list">
+							<li class="aboutbox-item">
 								<i class="spritesheet sprite-bag"></i>
 								<div class="text">
 									<span class="where">Опыт работы отсутствует</span>
@@ -132,13 +146,13 @@
 							</li>
 						</ul>
 					</section>
-					<section class="aboutbox education">
-						<h2 class="content_header education">Образование</h2>
-						<ul class="aboutbox-list education">
-							<li class="aboutbox-item icon-college">
+					<section class="aboutbox">
+						<h2 class="content_header">Образование</h2>
+						<ul class="aboutbox-list">
+							<li class="aboutbox-item">
 								<i class="spritesheet sprite-hat"></i>
 								<div class="text">
-									<span class="where">АУпПРБ</span>
+									<span class="where">АУпПРБ </span>
 									<span class="period">Сентябрь 2012 - по настоящее время</span>
 								</div>
 							</li>

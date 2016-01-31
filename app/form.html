@@ -8,7 +8,8 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="">
 	<title>Мой прекрасный сайт!</title>
-	<link rel="icon" type="image/png" href="images/favicon.ico" sizes="32x32">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/form.css">
@@ -31,7 +32,10 @@
 		<header class="header">
 			<div class="container-big">
 				<div class="logo">
-					<img src="images/logo_of_site.png" alt="Логотип сайта" class="logo-in-header" title="Логотип сайта"></div>
+					<a href="index.html" class="logo-link">
+						<img src="images/logo_of_site.png" alt="Логотип сайта" class="logo-in-header" title="Логотип сайта">
+					</a>
+				</div>
 				<div class="sicon">
 					<ul class="sicon-list">
 						<li class="sicon-item">
@@ -97,9 +101,18 @@
 							<label for="code" class="label message">Введите код, указанный на картинке</label>
 							<div class="captcha">
 								<img src="images/captcha.png" alt="captcha" class="captcha-img"></div>
-							<input type="text" id="code" class="textarea code" placeholder="Введите код"></div>
+							<div class="code-text">
+							<input type="text" id="code" class="textarea code" placeholder="Введите код">
+							</div>
+							</div>
+							<div class="button_block">
+							<div class="submit-item">
 						<button type="submit" class="button submit">Отправить</button>
+						</div>
+						<div class="reset-item">
 						<button type="reset" class="button reset">Очистить</button>
+						</div>
+						</div>
 					</form>
 				</section>
 			</div>

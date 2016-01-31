@@ -1,17 +1,18 @@
 .dynamic_info{
 	float: left;
-	margin: 40px 0 40px 60px;
+	margin-left: 60px;
+	margin-bottom: 40px;
 }
 .send_project{
 	overflow: hidden;
 	position: relative;
-	width: 665px;
+	width: 650px;
 	background-color: #eff3f7;
 	border-radius: 4px;
 }
 .header_of_sendpro{
 	margin: 0;
-	padding: 50px 60px;
+	padding: 40px 60px;
 	color: #fff;
 	background-color: #48cbe8;
 	font-family: 'fira_sansbook';
@@ -22,14 +23,14 @@
 .header_of_sendpro:after{
 	position: absolute;
 	content: " ";
-	top: 140px;
+	top: 120px;
 	left: 0;
-	width: 665px;
-	height: 20px;
+	width: 650px;
+	height: 19px;
 	background-color: #67dffa;
 }
 .form{
-	padding: 50px 110px 200px 110px;
+	padding: 58px 120px 200px 120px;
 }
 .textarea{
 	/*margin: 10px;*/
@@ -48,10 +49,11 @@
 	border-radius: 3px;
 	border:1px solid #67dffa;
 	padding: 10px;
+	margin-bottom: 10px;
 	color: #67dffa;
 	outline: none;
-	width: 405px;
-	height: 183px;
+	width: 380px;
+	height: 163px;
 	font-size: 13px;
 	font-family: 'fira_sanslight';
 }
@@ -94,37 +96,44 @@ input:focus:-ms-input-placeholder      {line-height: 100px; transition: line-hei
 :focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}  
 
 .textarea.name{
-	width: 190px;
+	width: 180px;
 	height: 39px;
 }
 .textarea.email{
-	width: 190px;
-	height: 39px;
+	width: 180px;
+	height: 37px;
 }
 .textarea.code{
-	width: 193px;
-	height: 33px;
+	width: 180px;
+	height: 30px;
 	margin-top: 20px;
 }
 .label{
 	color: #a9abbe;
 	font-size: 19px;
 	font-family: 'fira_sanslight';
+	line-height: 1.4;
 }
 .label.message{
 	font-size: 17px;
 }
 .button{
 	outline: none;
-	width: 138px;
-	height: 33px;
+	padding: 0px 20px;
+	/*height: 33px;*/
 	border-radius: 4px;
 	color: #fff;
 	font-size: 19px;
 	font-family: 'fira_sansbook';
 }
+.submit-item{
+	float: left;
+}
+.reset-item{
+	float: right;
+}
 .button.submit{
-	margin-right: 143px;
+	margin-right: 127px;
 	border: 1px solid #48cbe8;
 	border-bottom: 2px solid #3ba8c0;
 	background-color: #48cbe8;
@@ -151,22 +160,21 @@ input:focus:-ms-input-placeholder      {line-height: 100px; transition: line-hei
 .item-name{
 	width: 200px;
 	float: left;
-	margin-right: 20px;
-	margin-bottom: 15px;
+	display: inline-block;
+	margin-bottom: 11px;
 }
 .item-email{
 	width: 200px;
-	float: left;
+	float: right;
 	margin-bottom: 15px;
+	margin-right: 0;
 }
 .item-code{
-	margin-top: 15px;
 	margin-bottom: 20px;
-
 }
 .captcha{
 	position: relative;
-	width: 190px;
+	width: 180px;
 	height: 78px;
 	margin-right: 15px;
 	margin-bottom: 25px;
@@ -182,4 +190,7 @@ input:focus:-ms-input-placeholder      {line-height: 100px; transition: line-hei
 	position: absolute;
 	top: 20px;
 	left: 20px;
+}
+.code-text{
+	float: right;
 }

@@ -42,7 +42,7 @@ body {
 .header{
 	height: 119px;
 	background-color: #eff3f7;
-	/*width: 600px;*/
+	margin-bottom: 40px;
 }
 .container-big{
 	max-width: 1200px;
@@ -55,26 +55,25 @@ body {
 .container-big:after{
 	content: '';
 	position: absolute;
-	top:115px;
+	top:118px;
 	left: 0;
-	height: 3px;
+	height: 2px;
 	width: 1400px;
-	background: linear-gradient(90deg, #fff 50px, #1c667a 700px, #fff 1350px, #fff 400px ) left top repeat-x;; 
-	background: url(../images/line.png);
+	background: url(../images/line.png) no-repeat;
+	background: linear-gradient(90deg, #fff 50px, #1c667a 700px, #fff 1350px, #fff 400px ) left top repeat-x;
+	/*background: -webkit-linear-gradient( 0deg, rgb( 28, 102, 122 ) 0%, rgb( 246, 250, 254 ) 0%, rgb( 216, 216, 216 ) 0%, rgb( 242, 246, 250 ) 0%, rgb( 28, 102, 122 ) 48.364%, rgb( 242, 246, 250 ) 100%);*/
 }
 .logo{
 	float: left;
 	margin: 10px;
-}
-.logo-in-header{
-	width: 200px
 }
 .logo-in-header:hover{
 	opacity: 0.8
 }
 .sicon{
  	float: right;
-	margin: 20px;
+ 	/*margin-right: 30px;*/
+	margin: 25px 7px 20px 0;
 }
 .sicon-list{
 	margin: 0;
@@ -140,14 +139,14 @@ body {
 	overflow: hidden;
 	background-color: #eff3f7;
 	width: 250px;
-	margin-top: 40px;
 	border-radius: 4px;
+	margin-bottom: 23px;
 }
 .ul_of_main_navigation{
 	margin: 0;padding: 0;
 }
 .list_of_main_navigation{
-	height: 75px;
+	overflow: hidden;
 	margin: 0 11px;
 	border-bottom: 2px solid #3ba8c0;
 }
@@ -179,7 +178,11 @@ body {
 }
 .list_of_main_navigation.common .link_of_main_navigation{
 	color: #fff;
-	font-size: 21px;
+	font-size: 22px;
+	font-weight: normal;
+    font-style: normal;
+    padding-top: 22px;
+    padding-bottom: 19px;
 }
 .list_of_main_navigation.common .link_of_main_navigation:hover{
 	color: #fff;
@@ -188,9 +191,9 @@ body {
 
 /*Контакты*/
 .address{
-	width: 250px; background-color: #3ba8c0;
-	/*margin-left: 220px;*/
-	margin-top: 25px;
+	overflow: hidden;
+	width: 250px; 
+	background-color: #3ba8c0;
 	margin-bottom: 25px;
 	border-radius: 4px;
 }
@@ -266,53 +269,30 @@ body {
 
 /*Подвал*/
  .footer{
-	/*height: 85px;*/
 	background-color: #eff3f7;
-	/*height: 100%;*/
 }
 .container-footer{
 	max-width: 1000px; 
 	min-width: 960px;
 	/*width: 1400px;*/
 	margin: 0 auto;
-	position: relative;
+	
 }
 .container-footer:before{
 	content: '';
 	position: absolute;
-	left: 0;
-	height: 3px;
-	width: 1400px;
+	margin: 0;
+	height: 2px;
+	width: 1300px;
 	color: #3C21C2;
-	background: linear-gradient(90deg, #fff 50px, #1c667a 700px, #fff 1050px ) left top repeat-x;
-	background: url(../images/line.png);
+	background: url(../images/line-bottom.png);
+	background: linear-gradient(90deg, #fff 50px, #1c667a 700px, #fff 1250px ) left top repeat-x;
+	
 }
-
-/*  .container-footer .copyright{
-	position: absolute;
-	left: 380px;
-	padding-top: 30px;
-	text-align: center;
-	font-size: 13px;
-	font-family: 'fira_sanslight';
-	color: #4a545d;
-}
-.login{
-	position: absolute;
-	top:26px;
-	left: 50px;
-	background: url(../images/login.png) no-repeat; width: 20px; height: 33px;
-	display: block;
-	height: 40px;
-	text-indent: -9999px;
-} 
- .login:hover {
- 	background: url(../images/login-hover.png) no-repeat;width: 20px; height: 33px
- }  */
-
  .item-login{
 	float: left;
 	margin-top: 30px;
+	margin-left: 30px;
 }
 .item-copyright{
 	float: right;
