@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/form.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/tooltip.css">
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<script>window.jQuery || document.write ('<script src="js/html5shiv.js"><\/script>')</script>
@@ -88,23 +89,35 @@
 			<div class="dynamic_info">
 				<section class="send_project">
 					<h2 class="header_of_sendpro">У вас интересный проект? Напишите мне</h2>
-					<form action="" name="" accept-charset="UTF-8" class="form">
+					<form action="" name="form" id="addProjectForm" accept-charset="UTF-8" class="form">
+					<div class="form-item clearfix">
 						<div class="item-name">
 							<label for="name" class="label">Имя</label>
-							<input type="text" id="name" class="textarea name" placeholder="Как к Вам обращаться"></div>
+							<input type="text" id="name" class="text name" placeholder="Как к Вам обращаться">
+							<div class="tooltip name">Вы не ввели имя</div>
+						</div>
 						<div class="item-email">
 							<label for="email" class="label">E-mail</label>
-							<input type="email" id="email" class="textarea email" placeholder="Куда мне писать"></div>
+							<input type="email" id="email" class="text email" placeholder="Куда мне писать">
+							<div class="tooltip email">Вы не ввели email</div>
+						</div>
+					</div>
+						<div class="form-item">
 						<label for="message" class="label">Сообщение</label>
 						<textarea name="text" id="message" cols="30" rows="10" placeholder="Кратко в чем суть" class="text message"></textarea>
+						<div class="tooltip message">Ваш вопрос</div>
+					</div>
+					<div class="form-item">
 						<div class="item-code">
 							<label for="code" class="label message">Введите код, указанный на картинке</label>
 							<div class="captcha">
 								<img src="images/captcha.png" alt="captcha" class="captcha-img"></div>
 							<div class="code-text">
-							<input type="text" id="code" class="textarea code" placeholder="Введите код">
+							<input type="text" id="code" class="text code" placeholder="Введите код">
+							<div class="tooltip code">Вы не ввели код</div>
 							</div>
 							</div>
+						</div>
 							<div class="button_block">
 							<div class="submit-item">
 						<button type="submit" class="button submit">Отправить</button>
@@ -121,7 +134,7 @@
 	<footer class="footer clearfix">
 		<div class="container-footer clearfix">
 			<div class="item-login">
-				<a href="#" class="login">Войти</a>
+				<a href="authorization.html" class="login">Войти</a>
 			</div>
 			<div class="item-copyright">
 				<span class="copyright">

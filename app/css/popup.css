@@ -1,0 +1,178 @@
+/*  .popup{
+   width:100%;
+   min-height:100%;
+   background-color: rgba(0,0,0,0.5);
+   overflow:hidden;
+   position:fixed;
+   top:0;
+   left: 0;
+   z-index: 1;
+}
+.popup .popup-content{
+   margin:50px auto 0px auto;
+   box-shadow: 0px 0px 10px #000;
+} */
+#project-popup{
+    display: none;
+}
+.popup-content{
+    background-color: #eff3f7;
+    border-radius: 3px;
+} 
+.addProjectForm{
+    width: 320px;
+    margin: 12px 20px 25px 20px;
+}
+.formHeader{
+    background-color: #48cbe8;
+    border-radius: 3px 3px 1px 1px;
+    position: relative;
+}
+.header-item{
+    margin: 0;
+    padding: 8px 14px;
+    color: #fff;
+    font-size: 25px;
+    font-family: 'fira_sansregular';
+    font-weight: normal;
+    font-style: normal;
+}
+.formHeader:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10px;
+    width: 100%;
+    background-color: #67dffa;
+}
+.b-close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    outline:none;
+    border:none;
+    background: url(../images/close-popup.png) no-repeat;
+    height: 25px;
+    width: 25px;
+}
+.label{
+    display: block;
+    margin-bottom: 3px;
+    color: #a9abbe;
+    font-size: 17px;
+    font-family: 'fira_sansbook';
+    line-height: 1.5;
+}
+.text{
+    margin-bottom: 10px;
+    padding-left: 10px;
+    width: 308px;
+    height: 36px;
+    outline:none;
+    border-radius: 3px;
+    border:1px solid #67dffa;
+    color:#67dffa;
+    font-size: 13px;
+    font-family: 'fira_sanslight';
+}
+.text.area{
+    padding-top: 10px;
+    height: 99px;
+    resize: none;
+}
+
+input::-webkit-input-placeholder {
+    color: #67dffa;
+    font-size: 13px;
+    font-family: 'fira_sanslight';
+} 
+input::-moz-placeholder {
+    color: #67dffa;
+    font-size: 13px;
+    font-family: 'fira_sanslight';
+}
+input:-moz-placeholder {
+    color: #67dffa;
+    font-size: 13px;
+    font-family: 'fira_sanslight';
+}
+input:-ms-input-placeholder {
+    color: #67dffa;
+    font-size: 13px;
+    font-family: 'fira_sanslight';
+}
+textarea::-webkit-input-placeholder{color:#67dffa;font-size:13px;font-family: 'fira_sanslight';}
+textarea::-moz-placeholder{padding:8px;color:#67dffa;font-size:13px;font-family: 'fira_sanslight';}
+textarea:-moz-placeholder{padding:8px;color:#67dffa;font-size:13px;font-family: 'fira_sanslight';}
+textarea:-ms-input-placeholder{padding:8px;color:#67dffa;font-size:13px;font-family: 'fira_sanslight';}
+input::-webkit-input-placeholder       {line-height: 20px;  transition: line-height 0.5s ease;}
+input:-ms-input-placeholder            {line-height: 20px;  transition: line-height 0.5s ease;}
+input:focus::-webkit-input-placeholder {line-height: 100px; transition: line-height 0.5s ease;}
+input:focus:-ms-input-placeholder      {line-height: 100px; transition: line-height 0.5s ease;}
+.text.area::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+.text.area:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}  
+
+.button-item{
+    width: 320px;
+    text-align: center;
+}
+.button.submit{
+    outline: none;
+    padding: 0px 27px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 19px;
+    font-family: 'fira_sansbook';
+}
+.button.submit{
+    border: 1px solid #48cbe8;
+    border-bottom: 2px solid #3ba8c0;
+    background-color: #48cbe8;
+}
+.button.submit:active{
+    border-bottom-color:transparent;
+    border-top: 2px solid #48cbe8;
+}
+.button.submit:hover{
+    border-bottom-color:transparent;
+}
+.load-items {
+   margin-bottom: -50px;
+}
+ .send-file {
+   margin-left: -5px;
+   background-color: #48cbe8;
+   background-image: url(../images/load_picture.png);
+   background-position: center center;
+    background-repeat: no-repeat; 
+    width: 50px;
+   height: 40px;
+   border-radius: 1px 4px 4px 1px;
+   border: none;
+
+}
+.text.load {
+    float: left;
+    width: 260px;
+}
+ .custom-file-input {
+   width: 50px;
+   height: 40px;
+   opacity: 0;
+   filter: alpha(opacity=0);
+   position: relative;
+   top: -50px;
+   left: 270px;
+   z-index: 99999;
+   cursor: pointer;
+} 
+
+
+

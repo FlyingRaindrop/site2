@@ -4,7 +4,7 @@
 	margin-bottom: 40px;
 }
 .send_project{
-	overflow: hidden;
+	/*overflow: hidden;*/
 	position: relative;
 	width: 650px;
 	background-color: #eff3f7;
@@ -19,6 +19,7 @@
 	font-weight: normal;
     font-style: normal;
     font-size: 27px;
+    border-radius: 3px 3px 0 0;
 }
 .header_of_sendpro:after{
 	position: absolute;
@@ -32,7 +33,7 @@
 .form{
 	padding: 58px 120px 200px 120px;
 }
-.textarea{
+.text{
 	/*margin: 10px;*/
 	color:#67dffa;
 	border-radius: 3px;
@@ -95,15 +96,15 @@ input:focus:-ms-input-placeholder      {line-height: 100px; transition: line-hei
 :focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
 :focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}  
 
-.textarea.name{
+.text.name{
 	width: 180px;
 	height: 39px;
 }
-.textarea.email{
+.text.email{
 	width: 180px;
 	height: 37px;
 }
-.textarea.code{
+.text.code{
 	width: 180px;
 	height: 30px;
 	margin-top: 20px;
@@ -120,7 +121,6 @@ input:focus:-ms-input-placeholder      {line-height: 100px; transition: line-hei
 .button{
 	outline: none;
 	padding: 0px 20px;
-	/*height: 33px;*/
 	border-radius: 4px;
 	color: #fff;
 	font-size: 19px;

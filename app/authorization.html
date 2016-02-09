@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<title>Мой прекрасный сайт!</title>
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/authorization.css">
+	<link rel="stylesheet" href="css/tooltip.css">
+	<link rel="stylesheet" href="css/popup.css">
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script>window.jQuery || document.write ('<script src="js/html5shiv.js"><\/script>')</script>
+<![endif]-->
+</head>
+<body>
+<!-- [if lt IE8]>
+<p class="browsehappy">
+	Ваш браузер устарел. Пожалуйста
+	<a target="_blank" href="http://browsehappy.com/">обновите</a>
+	его.
+</p>
+<![endif]-->
+<div class="wrapper">
+	<div class="container clearfix">
+	<div class="container-big">
+	<div class="authorization-wrapper">
+	<div class="formHeader">
+		<h2 class="header-item">Авторизируйтесь</h2>
+	</div>
+		<form accept-charset="UTF-8" role="form" class="addProjectForm" id="addProjectForm">
+			<div class="form-item">
+				<label for="name" class="label" title="Вы не ввели название проекта">Логин</label>
+				<input id="name" name="name" type="text" placeholder="Введите логин" class="text">
+				<div class="tooltip">введите логин</div>
+			</div>
+			<div class="form-item">
+				<label for="link" class="label">Пароль</label>
+				<input id="link" name="link" type="password" placeholder="Введите пароль" class="text">
+				<div class="tooltip">введите пароль</div>
+			</div>
+			<div class="button-item">
+				<button type="submit" class="button submit" name="submit-button">Войти</button>
+			</div>
+		</form>
+		</div>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container-footer clearfix">
+			<div class="item-copyright">
+				<span class="copyright">
+					&copy; 2016 Это мой сайт, пожалуйста, не копируйте и не воруйте его
+				</span>
+			</div>
+		</div>
+	</footer>
+</div>
+<script src="bower/jquery/jquery.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

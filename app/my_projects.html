@@ -14,6 +14,8 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/my-projects.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/popup.css">
+	<link rel="stylesheet" href="css/tooltip.css">
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<script>window.jQuery || document.write ('<script src="js/html5shiv.js"><\/script>')</script>
@@ -139,13 +141,52 @@
 					</ul>
 					</div>
 				</section>
+				<div class="popup" id="popupForm">
+				    <div class="popup-content" id="project-popup">
+				    	<div class="formHeader">
+				    		<h2 class="header-item">Добавление проекта</h2>
+				    		<button type="button" class="b-close"></button>
+				    	</div>
+				    	<form accept-charset="UTF-8" role="form" class="addProjectForm" id="addProjectForm">
+				    		<div class="form-item">
+				    			<label for="name" class="label" title="Вы не ввели название проекта">Название проекта</label>
+				    			<input id="name" name="name" type="text" placeholder="Введите название проекта" class="text" qtip-content="Вы не ввели название проекта">
+				    			<div class="tooltip">введите название</div>
+				    		</div>
+				    		<div class="form-item clearfix">
+				    			<label for="picture" class="label">Картинка проекта</label>
+				    			<div class="load-items ">
+								   <div class="mask">
+								      <input id="picture" name="picture" class="text load" type="text"  placeholder="Загрузите изображение">
+								       <div class="tooltip">изображение</div>
+								      <button class="send-file"></button>
+								   </div>
+								   <input id="my_file" class="custom-file-input" type="file" name="my_file">
+								</div>
+							</div>
+				    		<div class="form-item">
+				    			<label for="link" class="label">URL проекта</label>
+				    			<input id="link" name="link" type="text" placeholder="Добавьте ссылку" class="text">
+				    			<div class="tooltip">ссылка на проект</div>
+				    		</div>
+				    		<div class="form-item">
+				    			<label for="description" class="label">Описание</label>
+				    			<textarea name="description" id="description" placeholder="Пара слов о Вашем проекте" class="text area"></textarea>
+				    			<div class="tooltip">описание проекта</div>
+				    		</div>
+				    		<div class="button-item">
+				    			<button type="submit" class="button submit" name="submit-button">Добавить</button>
+				    		</div>
+				    	</form>
+				    </div>
+				</div>
 			</div>
 		</div>
 	</div>
 	<footer class="footer clearfix">
 		<div class="container-footer clearfix">
 			<div class="item-login">
-				<a href="#" class="login">Войти</a>
+				<a href="authorization.html" class="login">Войти</a>
 			</div>
 			<div class="item-copyright">
 				<span class="copyright">
@@ -156,6 +197,9 @@
 	</footer>
 </div>
 <script src="bower/jquery/jquery.js"></script>
+<script src="js/placeholder.js"></script>
+<script src="js/placeholder-init.js"></script>
+<script src="bower/bPopup/jquery.bpopup.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

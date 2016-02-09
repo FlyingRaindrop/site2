@@ -4,6 +4,7 @@ var gulp = require('gulp'),
 	notify = require('gulp-notify'),
 	rename = require('gulp-minify-css'),
 	browserSync = require('browser-sync');
+	// wiredep=require('wiredep').stream;
 
 
 gulp.task('default', function () {
@@ -12,7 +13,7 @@ gulp.task('default', function () {
     .pipe(minifyCSS())
     .pipe(rename("bundle.min.css"))
     .pipe(notify("Done!"))
-    .pipe(gulp.dest('out/'));
+    .pipe(gulp.dest('css/'));
 });
 
 gulp.task('watch', function(){
