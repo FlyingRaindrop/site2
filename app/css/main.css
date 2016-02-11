@@ -64,7 +64,6 @@ body {
     background: linear-gradient(90deg, #fff 0%, #1c667a 50%, #fff 100% );
     background: -webkit-linear-gradient( 0deg, rgb( 28, 102, 122 ) 0%, rgb( 246, 250, 254 ) 0%, rgb( 216, 216, 216 ) 0%, rgb( 242, 246, 250 ) 0%, rgb( 28, 102, 122 ) 48.364%, rgb( 242, 246, 250 ) 100%);
 }
-
 .logo{
 	float: left;
 	margin: 10px;
@@ -248,7 +247,6 @@ body {
 }
 .list_of_address .item_of_address .href{
 	color: #fff; 
-	/*display: block;*/
 	font-family: 'fira_sansbook';
 	font-size: 17px;
 	font-weight: normal;

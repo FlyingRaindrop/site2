@@ -4,15 +4,17 @@
 	margin-bottom: 40px;
 }
 .send_project{
-	/*overflow: hidden;*/
 	position: relative;
 	width: 650px;
 	background-color: #eff3f7;
 	border-radius: 4px;
 }
+.header-item{
+	position: relative;
+}
 .header_of_sendpro{
 	margin: 0;
-	padding: 40px 60px;
+	padding: 40px 60px 57px;
 	color: #fff;
 	background-color: #48cbe8;
 	font-family: 'fira_sansbook';
@@ -24,17 +26,16 @@
 .header_of_sendpro:after{
 	position: absolute;
 	content: " ";
-	top: 120px;
+	bottom: 0;
 	left: 0;
 	width: 650px;
-	height: 19px;
+	height: 17px;
 	background-color: #67dffa;
 }
-.form{
+.addProjectForm{
 	padding: 58px 120px 200px 120px;
 }
 .text{
-	/*margin: 10px;*/
 	color:#67dffa;
 	border-radius: 3px;
 	border:1px solid #67dffa;
@@ -47,10 +48,8 @@
 .text.message{
 	resize: none;
 	color:#67dffa;
-	border-radius: 3px;
-	border:1px solid #67dffa;
 	padding: 10px;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	color: #67dffa;
 	outline: none;
 	width: 380px;
@@ -145,7 +144,7 @@ input:focus:-ms-input-placeholder      {line-height: 100px; transition: line-hei
 }
 .button.submit:active{
 	border-bottom-color:transparent;
-    border-top: 2px solid #48cbe8;
+    border-top: 2px solid #3ba8c0;
 }
 .button.reset:active{
 	border-bottom-color:transparent;
@@ -171,26 +170,4 @@ input:focus:-ms-input-placeholder      {line-height: 100px; transition: line-hei
 }
 .item-code{
 	margin-bottom: 20px;
-}
-.captcha{
-	position: relative;
-	width: 180px;
-	height: 78px;
-	margin-right: 15px;
-	margin-bottom: 25px;
-	color:#67dffa;
-	border-radius: 3px;
-	border:1px solid #67dffa;
-	color: #67dffa;
-	padding-left: 10px; 
-	background-color: #fff;
-	float: left;
-}
-.captcha-img{
-	position: absolute;
-	top: 20px;
-	left: 20px;
-}
-.code-text{
-	float: right;
 }

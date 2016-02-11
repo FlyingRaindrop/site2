@@ -10,12 +10,18 @@
 	<title>Мой прекрасный сайт!</title>
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<!-- build:css css/vender.css -->
+	<!-- bower:css -->
 	<link rel="stylesheet" href="bower/normalize-css/normalize.css">
+	<!-- endbower -->
+	<!-- endbuild -->
+	<!-- build:css css/combined.css -->
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/my-projects.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/popup.css">
 	<link rel="stylesheet" href="css/tooltip.css">
+	<!-- endbuild -->
 	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<script>window.jQuery || document.write ('<script src="js/html5shiv.js"><\/script>')</script>
@@ -147,7 +153,7 @@
 				    		<h2 class="header-item">Добавление проекта</h2>
 				    		<button type="button" class="b-close"></button>
 				    	</div>
-				    	<form accept-charset="UTF-8" role="form" class="addProjectForm" id="addProjectForm">
+				    	<form accept-charset="UTF-8" role="form" class="addProjectForm" id="addProject">
 				    		<div class="form-item">
 				    			<label for="name" class="label" title="Вы не ввели название проекта">Название проекта</label>
 				    			<input id="name" name="name" type="text" placeholder="Введите название проекта" class="text" qtip-content="Вы не ввели название проекта">
@@ -155,7 +161,7 @@
 				    		</div>
 				    		<div class="form-item clearfix">
 				    			<label for="picture" class="label">Картинка проекта</label>
-				    			<div class="load-items ">
+				    			<div class="load-items">
 								   <div class="mask">
 								      <input id="picture" name="picture" class="text load" type="text"  placeholder="Загрузите изображение">
 								       <div class="tooltip">изображение</div>
@@ -196,10 +202,16 @@
 		</div>
 	</footer>
 </div>
+<!-- build:js scripts/vender.js -->
+<!-- bower:js -->
 <script src="bower/jquery/jquery.js"></script>
 <script src="js/placeholder.js"></script>
 <script src="js/placeholder-init.js"></script>
 <script src="bower/bPopup/jquery.bpopup.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+<!-- build:js scripts/combined.js -->
 <script src="js/main.js"></script>
+<!-- endbuild -->
 </body>
 </html>

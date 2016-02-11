@@ -106,6 +106,7 @@ body {
 }
 .authorization-wrapper .formHeader{
   box-sizing: border-box;
+  width: 590px;
 }
  .authorization-wrapper .formHeader:after{
   height: 15px;
@@ -154,6 +155,6 @@ body {
 }
 .authorization-wrapper .tooltip{
   top:60%;
-  right: 435px;
+  right: 433px;
   font-size: 15px;
 }
