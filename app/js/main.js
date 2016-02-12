@@ -9,6 +9,10 @@ var MyModule = (function(){
         $('.custom-file-input').on('change', _fileUpload);
         $('.addProjectForm').on('submit', _addProject);
         $('.addProjectForm').on('reset', _clearForm);
+        $('#feedbackForm').on('reset', function(){
+            grecaptcha.reset();
+        });
+        $('.add_project').on('click', _clearForm);
         $('.form-item').on('click', _hideTooltip);
         $('.b-close').on('click', _clearForm);
     };
@@ -34,7 +38,13 @@ var MyModule = (function(){
     };
 
     var _clearForm = function(){
-        $('form')[0].reset();
+        var input = $('.text');
+        for(var i=0; i<input.length; i++){
+            if(input[i].value !== $(input[i]).attr('placeholder')){
+                input[i].value = '';
+                $('input, textarea').placeholder();
+            }
+        }
         $('.tooltip').hide();
         $('.text').removeClass('error');
     };
@@ -52,11 +62,12 @@ var MyModule = (function(){
         var form = $(this),
             url = 'add_project.php',
             input = $('.text'),
-            tooltip=$('.tooltip'),
+            tooltip = $('.tooltip'),
+            placeholder = $('[placeholder]'),
             data = form.serialize();
 
         for(var i=0; i<input.length; i++){
-            if(input[i].value === ''){
+            if(input[i].value === '' || input[i].value === $(input[i]).attr('placeholder')){
                 $(tooltip[i]).show();
                  $(input[i]).addClass('error');
             }else{
@@ -120,3 +131,5 @@ var MyModule = (function(){
 })();
 
 MyModule.init();
+
+
